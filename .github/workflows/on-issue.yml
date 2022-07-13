@@ -17,7 +17,7 @@ jobs:
         ${{ github.event.issue.body }}
         "@
         Write-Host $IssueBody 
-        $IssueBody | Out-File /temp/test.txt
+        $IssueBody | Out-File ./temp/test.txt
       shell: pwsh   
 
     - name: Add & Commit
