@@ -32,7 +32,6 @@ body:
       label: description
       description: |
        Place the description of your event here, you may use HTML. You may NOT use scripts
-      render: html
     validations:
       required: true
   - type: input
