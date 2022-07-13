@@ -1,10 +1,10 @@
 ### eventname
 
-Waht Name shall it have
+New Event
 
 ### date
 
-2022-09-30 08:00:00 -00:00
+2022-08-30 08:00:00 -00:00
 
 ### description
 
