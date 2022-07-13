@@ -13,22 +13,22 @@ join:
   description: Click on the room you want to join. You can change rooms at any time to attend the sessions that you prefer.
   rooms:
    - name: roomname1
-       url: roomurl1
+    url: roomurl1
    - name: roomname2
-       url: roomurl2
+    url: roomurl2
    - name: roomname3
-       url: roomurl3
+    url: roomurl3
   
 sponsors: 
   - link: 
-      image: 
-      height: 
+  image: 
+  height: 
   - link: 
-      image: 
-      height: 
+  image: 
+  height: 
   - link: 
-      image: 
-      height: 
+  image: 
+  height: 
  
 
 scheduleurl: https://sessionize.com/api/v2/APITAG/view/GridSmart
