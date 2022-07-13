@@ -13,7 +13,9 @@ jobs:
     - name: Get Information to file
       run: |
         Write-Host "What do we have?"
-        $IssueBody =  "${{ github.event.issue.body }}"
+        $IssueBody =  @"
+        ${{ github.event.issue.body }}
+        "@
         Write-Host $IssueBody 
         $IssueBody | Out-File /temp/test.txt
       shell: pwsh   
