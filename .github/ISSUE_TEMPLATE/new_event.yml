@@ -1,61 +1,40 @@
 name: Add New Event
-description: Use this issue to automatically create a pull request to add a new event to the website
+description: Use this issue to automatically create a pull request to add a new event to the website with all of the required information
+labels: New Event
 body:
   - type: markdown
     attributes:
       value: |
-       Please follow the instructions to create a new speaker entry.
-       We wil display this on callfordataspeakers.com
+       Please carefully follow all of the instructions to create a pull request to add a new Data Saturday event to the web-site
 
   - type: input
     id: name
     attributes:
-      label: fullname
-      description: "What is your full name"
-      placeholder: "Rob Sewell"
+      label: eventname
+      description: "What is the name of the event - This is normally the name of the city/country or region. For example Slovenia, Cambridge, Dallas, Rheinland"
+      placeholder: Slovenia"
+      value: Replace me with the name of your event
     validations:
       required: true  
   - type: input
-    id: topics
+    id: date
     attributes:
-      label: topics
-      description: "Please provide a list of topics seperated by commas that you provide Training Days / Pre-Cons on"
-      placeholder: "Database administration, Cloud infrastructure, Performance Tuning, Azure"
+      label: date
+      description: |
+      The date of your event in YYYY-MM-DD HH:mm:ss TZ For example 2022-06-30 08:00:00 -00:00 
+      https://www.digi.com/resources/documentation/digidocs/90001437-13/reference/r_iso_8601_date_format.htm
+      placeholder: "2022-06-30 08:00:00 -00:00"
+      value: 2022-06-30 08:00:00 -00:00
     validations:
       required: true
-  - type: dropdown
-    id: regions
+  - type: textare
+    id: description
     attributes:
-      label: regions
-      description: Which regions are you available to present?
-      options:
-        - Virtual
-        - Europe
-        - Middle East
-        - Africa
-        - South Asia
-        - South East Asia
-        - East Asia
-        - Oceania
-        - North America
-        - South America
-      multiple: true
-    validations:
-      required: true
-  - type: input
-    id: sessionize
-    attributes:
-      label: Sessionize
-      description: Please provide your Sessionize profile URL. It is important that this has all the required contact information on it.
-      placeholder: https://sessionize.com/rob-sewell
-    validations:
-      required: true
-  - type: input
-    id: language
-    attributes:
-      label: language
-      description: Please provide the languages that you can present your sessions in, seperated by commas if you are multi-lingual.
-      placeholder: English, German
-      value: English
+      label: description
+      description: |
+       Place the description of your event here, you may use HTML. You may NOT use scripts
+
+       If you wish to add images - external images can be referenced using HTML for example <img src="imagelink" width="225" height="225">
+      render: html
     validations:
       required: true
