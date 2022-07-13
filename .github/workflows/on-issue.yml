@@ -71,19 +71,19 @@ jobs:
         [string]$rooms = foreach($room in $eventObject.rooms -split ','){
             "- name: {0}
                url: {1}
-        " -f ($room -split ':')[0], ($room -split ':')[1]
+          " -f ($room -split ':')[0], ($room -split ':')[1]
         }
         [string]$sponsors = foreach($sponsors in $eventObject.sponsors -split ','){
             "- link: {0}
-               image: {1}
-               height: {2}
-        " -f ($sponsor -split ':')[0], ($sponsor -split ':')[1], ($sponsor -split ':')[1]
+              image: {1}
+              height: {2}
+         " -f ($sponsor -split ':')[0], ($sponsor -split ':')[1], ($sponsor -split ':')[1]
         }
         [string]$organisers = foreach($organiser in $eventObject.organizers -split ','){
             "- name: {0}
-               twitter: {1}
-               email: {2}
-        " -f ($organiser -split ':')[0], ($organiser -split ':')[1], ($organiser -split ':')[1]
+            twitter: {1}
+            email: {2}
+         " -f ($organiser -split ':')[0], ($organiser -split ':')[1], ($organiser -split ':')[1]
         }
         $ymlcontent = @"
         name: "Data Saturday  #{0} - {1}"
@@ -97,7 +97,6 @@ jobs:
           description: Click on the room you want to join. You can change rooms at any time to attend the sessions that you prefer.
           rooms:
            {5}
-        
         sponsors: 
           {6}
         
