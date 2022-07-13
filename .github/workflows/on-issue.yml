@@ -6,7 +6,7 @@ on:
      - "opened"
 
 jobs:
-  process:
+  createNewEventPr:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
       with:
         author_name: Beardy McBeardFace
         author_email: mrrobsewell@outlook.com
-        message: 'Added the temp file to the repo for ${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }}'
+        message: 'Added the temp file to the repo for ${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }} ***NO_CI***'
     - name: Parse the temp file and create the others
       run: |
         # get the temp file contents - I do this so I dont lose anything
@@ -46,15 +46,16 @@ jobs:
         }
         #save it to a file
         $eventname = $eventObject.eventname -replace ' ', '-' -replace '''','-' -replace '/','-' -replace '\\','-' -replace ':','-' -replace '\*','-' -replace '\?','-' -replace '"','-' -replace '\|','-'
-        $filePath = './temp/{0}.json' -f $speakerFileName
-        $eventObject |ConvertTo-Json | Out-FIle -FilePath $filePath
+        $date = Get-Date -Format "YYYY-MM-dd_HHmmss"
+        $filePath = './temp/{0}_{1}.json' -f $speakerFileName, $date
+        $eventObject |ConvertTo-Json | Out-FIle -FilePath $eventname
       shell: pwsh   
     - name: Add & Commit
       uses: EndBug/add-and-commit@v8.0.2
       with:
         author_name: Beardy McBeardFace
         author_email: mrrobsewell@outlook.com
-        message: 'Added the parsed event file to the repo for ${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }}'
+        message: 'Added the parsed event file to the repo for ${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }} ***NO_CI***'
     - name: Close Issue
       uses: peter-evans/close-issue@v2
       with:
