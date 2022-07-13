@@ -1,6 +1,6 @@
 ### eventname
 
-name of event with spaces
+Replace me with the name of your event
 
 ### date
 
