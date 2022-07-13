@@ -48,7 +48,6 @@ jobs:
         $eventname = $eventObject.eventname -replace ' ', '-' -replace '''','-' -replace '/','-' -replace '\\','-' -replace ':','-' -replace '\*','-' -replace '\?','-' -replace '"','-' -replace '\|','-'
         $filePath = './temp/{0}.json' -f $speakerFileName
         $eventObject |ConvertTo-Json | Out-FIle -FilePath $filePath
-        $speakerFileName | OUt-File ./speakers/list.txt -Append
       shell: pwsh   
     - name: Add & Commit
       uses: EndBug/add-and-commit@v8.0.2
