@@ -70,13 +70,13 @@ jobs:
         $mdcontent| Out-File $mdFileName
         [string]$rooms = foreach($room in $eventObject.rooms -split ','){
             "- name: {0}
-            url: {1}
+             url: {1}
           " -f ($room -split ':')[0], ($room -split ':')[1]
         }
         [string]$sponsors = foreach($sponsors in $eventObject.sponsors -split ','){
             "- link: {0}
-          image: {1}
-          height: {2}
+             image: {1}
+             height: {2}
          " -f ($sponsor -split ':')[0], ($sponsor -split ':')[1], ($sponsor -split ':')[1]
         }
         [string]$organisers = foreach($organiser in $eventObject.organizers -split ','){
