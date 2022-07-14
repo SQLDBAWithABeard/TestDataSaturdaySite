@@ -51,7 +51,7 @@ jobs:
         $date = Get-Date -Format "yyyy-MM-dd_HHmmss"
         $eventDate = [datetime]$eventObject.date
         $filePath = './temp/{0}_{1}.json' -f $eventname, $date
-        $eventObject |ConvertTo-Json | Out-FIle -FilePath $eventname
+        $eventObject |ConvertTo-Json | Out-FIle -FilePath $filePath
         ## Create the files as required
         [int]$latest = ((Get-ChildItem ./_data/events).Name | Sort-Object -Descending | Select-Object -First 1 ) -replace '.yml','' -replace 'datasaturday',''
         $newNumber = '{0:d4}' -f ($latest + 1)
@@ -73,7 +73,7 @@ jobs:
              url: {1}
           " -f ($room -split ':')[0], ($room -split ':')[1]
         }
-        [string]$sponsors = foreach($sponsors in $eventObject.sponsors -split ','){
+        [string]$sponsors = foreach($sponsor in $eventObject.sponsors -split ','){
             "- link: {0}
             image: {1}
             height: {2}
