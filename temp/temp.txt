@@ -1,6 +1,6 @@
 ### eventname
 
-Replace me with the name of your event
+NExt
 
 ### date
 
