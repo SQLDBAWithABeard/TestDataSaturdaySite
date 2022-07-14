@@ -1,0 +1,12 @@
+{
+  "eventname": "NExt",
+  "date": "2022-06-30 08:00:00 -00:00",
+  "description": "  This is the webpage for the event blah de blaH with some HTML included\r\n  \r\n  <p>We believe that by sharing these resources and enabling community input, we can provide the same level of events that SQLSaturday provided.</p>\r\n      <p>You can join the discussion at: <a href=\"https://github.com/sqlcollaborative/DataSaturdays\">https://github.com/sqlcollaborative/DataSaturdays</a></p>\r\n      <p>This site and the repo are hosted in the SQL Collaborative organisation, and are for the community.</p>",
+  "registrationurl": "_No response_",
+  "rooms": "roomname1:roomurl1,roomname2:roomurl2,roomname3:roomurl3",
+  "scheduleurl": "https://sessionize.com/api/v2/APITAG/view/GridSmart",
+  "sponsors": "sponsor1link:sponsor1name:sponsor1height,sponsor2link:sponsor2name:sponsor2height,sponsor3link:sponsor3name:sponsor3height",
+  "speakerlisturl": "https://sessionize.com/data-saturday-parma-2022/",
+  "volunteerrequesturl": "_No response_",
+  "organizers": "organizer1name:organizer1twitter:organizer1email,organizer2name:organizer2twitter:organizer2email,organizer3name:organizer3twitter:organizer3email"
+}
