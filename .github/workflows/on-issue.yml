@@ -124,6 +124,6 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
       with:
-       assignees: [SQLDBAWithABeard,SpaghettiDba]
-       reviewers: [SQLDBAWithABeard,SpaghettiDba]
-       labels: [New Event]
+       assignees: SQLDBAWithABeard,SpaghettiDba
+       reviewers: SQLDBAWithABeard,SpaghettiDba
+       labels: "New Event"
