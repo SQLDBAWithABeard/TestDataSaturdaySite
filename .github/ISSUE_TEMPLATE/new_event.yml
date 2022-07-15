@@ -28,8 +28,7 @@ body:
     id: date
     attributes:
       label: date
-      description: |
-       "# Please provide the date of the event 
+      description: "# Please provide the date of the event 
        
        The date of your event in YYYY-MM-DD HH:mm:ss TZ format please.  
        For example 2022-06-30 08:00:00 -00:00  
@@ -43,8 +42,7 @@ body:
     id: description
     attributes:
       label: description
-      description: |
-      "# Please provide the description of the event 
+      description: "# Please provide the description of the event 
        Place the description of the event here, you may use HTML. You **may NOT use scripts**. Include as much information as you think is required. Normally, this will include full details of the event, the name, the address, the type of sessions, maybe some history.  
          
        Should you require images then you will need to link to external images with HTML.
@@ -55,8 +53,7 @@ body:
     id: registrationurl
     attributes:
       label: registrationurl
-      description: |
-       "# Please provide the attendee registration URL 
+      description:  "# Please provide the attendee registration URL 
         This is your attendee registration URL.  
         You can leave this blank at first and update it later if need be.  
         This will be the URL provided by the service that you use for attendee registration such as Eventbrite.  
@@ -77,16 +74,14 @@ body:
     id: scheduleurl
     attributes:
       label: scheduleurl
-      description: |
-         This is your schedule API URL from Sessionize.   
+      description: This is your schedule API URL from Sessionize.   
          You can leave this blank until you have it.
       placeholder: https://sessionize.com/api/v2/APITAG/view/GridSmart
   - type: textarea
     id: sponsors 
     attributes:
       label: sponsors 
-      description: |
-        "# Please provide sponsor information 
+      description: "# Please provide sponsor information 
         You can add as many sponsors as you wish or none at all (in which case, just make this blank). 
         If there are no sponsors, your site will display a message suggesting that if anyone wishes to sponsor the event to contact you and a link to the organizers (see below)  
         
@@ -105,8 +100,7 @@ body:
     id: speakerlisturl
     attributes:
       label: speakerlisturl
-      description: |
-        "# Please provide your Sessionize Call for Speakers Page URL 
+      description: "# Please provide your Sessionize Call for Speakers Page URL 
         The URL to your Sessionize Call for speakers page should be provided here.  
         You can get this from your Sessionize account.
         "
@@ -116,15 +110,13 @@ body:
     id: volunteerrequesturl
     attributes:
       label: volunteerrequesturl
-      description: |
-        "# Please provide a way for volunteers to contact you
+      description: "# Please provide a way for volunteers to contact you
         If you want a link for people to volunteer place it here - maybe its a webform, maybe its an email address."
   - type: textarea
     id: organizers  
     attributes:
       label: organizers  
-      description: |
-        "# Please provide the event organizers information
+      description: "# Please provide the event organizers information
         
         Add the details of the organizers and their contact details here. You can add as many as you wish. make sure to use the full twitter URL or other social media URL.
         
