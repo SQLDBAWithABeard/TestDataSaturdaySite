@@ -121,10 +121,9 @@ jobs:
         author_email: mrrobsewell@outlook.com
         message: 'Added the parsed event file to the repo for issue number #${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }} ***NO_CI***'
       continue-on-error: true
-    - name: Close Issue
-      uses: peter-evans/close-issue@v2
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
       with:
-        issue-number: ${{ github.event.issue.number }}
-        comment: |
-          Hey @${{ github.event.issue.user.login }},
-          Closing this issue now whilst we dev
+       assignees: [SQLDBAWithABeard,SpaghettiDba]
+       reviewers: [SQLDBAWithABeard,SpaghettiDba]
+       labels: [New Event]
