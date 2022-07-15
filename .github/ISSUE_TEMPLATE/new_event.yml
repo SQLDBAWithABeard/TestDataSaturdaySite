@@ -1,8 +1,6 @@
 name: Add New Event
 description: "# To add a new event
-Use this issue to automatically create a pull request to add a new event to the website with all of the required information that is needed to create the web-page to promote your event.  
-
-The PR should automatically tag Rob or Gianluca to review it but if you are still waiting after  24/36 hours, please feel free to poke one of us on Twitter.
+Use this issue to automatically create a pull request to add a new event to the website with all of the required information that is needed to create the web-page to promote your event. 
 "
 
 labels: ["New Event"]
@@ -10,7 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-       **Please** carefully follow all of the instructions to create a pull request to add a new Data Saturday event to the web-site. All of the information should be provided as explained in the description.
+       **Please** carefully follow all of the instructions to create a pull request to add a new Data Saturday event to the web-site. All of the information should be provided as explained in the description.  
+       The PR should automatically tag Rob or Gianluca to review it but if you are still waiting after  24/36 hours, please feel free to poke one of us on Twitter.
   - type: input
     id: name
     attributes:
