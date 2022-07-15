@@ -122,6 +122,11 @@ jobs:
         author_email: mrrobsewell@outlook.com
         message: 'Added the parsed event file to the repo for issue number #${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }} ***NO_CI***'
         new_branch: 'new-event-issue-${{ github.event.issue.number }}'
+    - uses: actions/checkout@v2
+      with: 
+       clean: true
+       fetch-depth: 0
+       ref: 'new-event-issue-${{ github.event.issue.number }}'
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
       with:
