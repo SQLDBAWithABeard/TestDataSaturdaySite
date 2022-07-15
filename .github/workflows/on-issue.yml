@@ -32,15 +32,16 @@ jobs:
         new_branch:  'new-event-issue-${{ github.event.issue.number }}'
         push: origin new-event-issue-${{ github.event.issue.number }} --set-upstream --force
       continue-on-error: true
-
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
       with:
-       assignees: SQLDBAWithABeard #,SpaghettiDba
-       reviewers: SQLDBAWithABeard #,SpaghettiDba
-       labels: "New Event"
-       base: main
-       branch:  'new-event-issue-${{ github.event.issue.number }}'
-       body: |
-        Pull Request created for new event for issue number #${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }}
+        source_branch: 'new-event-issue-${{ github.event.issue.number }}'                                 # If blank, default: triggered branch
+        destination_branch: "main"                      # If blank, default: master
+        pr_title: "Pulling ${{ github.ref }} into master" # Title of pull request
+        pr_body: ":crown: *An automated PR*"              # Full markdown support, requires pr_title to be set
+        pr_reviewer: "SQLDBAWithABeard"                         # Comma-separated list (no spaces)
+        pr_assignee: "SQLDBAWithABeard"                         # Comma-separated list (no spaces)
+        pr_label: "new-event"                               # Comma-separated list (no spaces)                    # Milestone name
+
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
