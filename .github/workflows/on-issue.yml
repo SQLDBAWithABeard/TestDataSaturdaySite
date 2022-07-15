@@ -30,6 +30,7 @@ jobs:
         author_email: mrrobsewell@outlook.com
         message: 'Added the temp file to the repo for issue number #${{ github.event.issue.number }} raised by @${{ github.event.issue.user.login }} ***NO_CI***'
         new_branch:  'new-event-issue-${{ github.event.issue.number }}'
+        push: origin new-event-issue-${{ github.event.issue.number }} --set-upstream --force
       continue-on-error: true
 
     - name: Create Pull Request
