@@ -119,9 +119,13 @@ body:
         Add the details of the organizers and their contact details here. You can add as many as you wish. make sure to use the full twitter URL or other social media URL.  
         
         The name of the organizer.   
+
         The twitter (or other social media) *link* of the organizer - the whole link not the username.  
-        The email address (or other contact method) of the organizer.    
+
+        The email address (or other contact method) of the organizer.
+
         Each separated by a colon :  
+        
         Separate each organizer information with a comma. It will look like this.  
 
         `organizer1name:organizer1twitter:organizer1email,organizer2name:organizer2twitter:organizer2email,organizer3name:organizer3twitter:organizer3email`
