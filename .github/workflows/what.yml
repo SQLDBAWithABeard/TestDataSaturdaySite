@@ -18,4 +18,5 @@ jobs:
        assignees: SQLDBAWithABeard #,SpaghettiDba
        reviewers: SQLDBAWithABeard #,SpaghettiDba
        labels: "New Event"
+       base: main
 
