@@ -1,10 +1,10 @@
 ### eventname
 
-Somerset
+Gianlucas palace
 
 ### date
 
-2022-08-30 08:00:00 -00:00
+2022-06-30 08:00:00 -00:00
 
 ### description
 
