@@ -31,14 +31,14 @@ jobs:
         push: origin new-event-issue-${{ github.event.issue.number }} --set-upstream --force
       continue-on-error: true
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4
-      with:
-       assignees: SQLDBAWithABeard #,SpaghettiDba
-       reviewers: SQLDBAWithABeard #,SpaghettiDba
-       labels: "New Event"
-       base: main
-       branch:  'new-event-issue-${{ github.event.issue.number }}'
-       body: |
-        Pull Request created for new event for issue number #${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }}
+  #  - name: Create Pull Request
+  #    uses: peter-evans/create-pull-request@v4
+  #    with:
+  #     assignees: SQLDBAWithABeard #,SpaghettiDba
+  #     reviewers: SQLDBAWithABeard #,SpaghettiDba
+  #     labels: "New Event"
+  #     base: main
+  #     branch:  'new-event-issue-${{ github.event.issue.number }}'
+  #     body: |
+  #      Pull Request created for new event for issue number #${{ github.event.issue.number }} raised by  @${{ github.event.issue.user.login }}
 
