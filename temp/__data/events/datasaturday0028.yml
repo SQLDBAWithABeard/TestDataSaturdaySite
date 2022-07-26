@@ -1,12 +1,8 @@
-name: "Data Saturday  #28 - Gianlucas house"
-date: 2022-10-30 08:00:00 -00:00
+name: "Data Saturday  #28 - Replace me with the na\zxc\zxcme of your event"
+date: 2022-06-30 08:00:00 -00:00
 
 description: '
-  This is the webpage for the event Gianlucas house with some HTML included
-  
-  <p>We believe that by sharing these resources and enabling community input, we can provide the same level of events that SQLSaturday provided.</p>
-      <p>You can join the discussion at: <a href="https://github.com/sqlcollaborative/DataSaturdays">https://github.com/sqlcollaborative/DataSaturdays</a></p>
-      <p>This site and the repo are hosted in the SQL Collaborative organisation, and are for the community.</p>
+\zxcz
  '
 registrationurl: _No response_
 join:
@@ -31,7 +27,7 @@ sponsors:
     height: sponsor3height
  
 
-scheduleurl: https://sessionize.com/api/v2/APITAG/view/GridSmart
+scheduleurl: _No response_
 
 speakerlisturl: https://sessionize.com/data-saturday-parma-2022/
 
@@ -48,4 +44,5 @@ organizers:
   - name: organizer3name
     twitter: organizer3twitter
     email: organizer3email
+Object
  
