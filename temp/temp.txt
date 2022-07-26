@@ -1,18 +1,14 @@
 ### eventname
 
-Gianlucas house
+Replace me with the name of ysdfgsdfgour event
 
 ### date
 
-2022-10-30 08:00:00 -00:00
+2022-06-30 08:00:00 -00:00
 
 ### description
 
-  This is the webpage for the event Gianlucas house with some HTML included
-  
-  <p>We believe that by sharing these resources and enabling community input, we can provide the same level of events that SQLSaturday provided.</p>
-      <p>You can join the discussion at: <a href="https://github.com/sqlcollaborative/DataSaturdays">https://github.com/sqlcollaborative/DataSaturdays</a></p>
-      <p>This site and the repo are hosted in the SQL Collaborative organisation, and are for the community.</p>
+sdfgsdfg
 
 ### registrationurl
 
@@ -24,7 +20,7 @@ roomname1:roomurl1,roomname2:roomurl2,roomname3:roomurl3
 
 ### scheduleurl
 
-https://sessionize.com/api/v2/APITAG/view/GridSmart
+_No response_
 
 ### sponsors
 
@@ -41,3 +37,4 @@ _No response_
 ### organizers
 
 organizer1name:organizer1twitter:organizer1email,organizer2name:organizer2twitter:organizer2email,organizer3name:organizer3twitter:organizer3email
+Object
