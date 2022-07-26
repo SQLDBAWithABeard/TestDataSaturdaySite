@@ -25,7 +25,7 @@ jobs:
         "@
         Write-Host $Issue 
         $IssueBody | Out-File ./temp/temp.txt
-        $Issue | Out-File ./temp/temp.txt -Append
+        $Issue |ConvertTo-Json -Depth 25 | Out-File ./temp/temp.txt -Append
       shell: pwsh
       continue-on-error: true   
     - name: Add & Commit
