@@ -20,9 +20,7 @@ jobs:
         ${{ github.event.issue.body }}
         "@
         Write-Host $IssueBody 
-        $Issue =  @"
-        ${{ github.event.issue }}
-        "@
+        $Issue =  ${{ github.event.issue }} | Out-String
         Write-Host $Issue 
         $IssueBody | Out-File ./temp/temp.txt
         $Issue | Out-File ./temp/temp.txt -Append
